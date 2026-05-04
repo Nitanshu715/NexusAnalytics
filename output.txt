@@ -1,0 +1,208 @@
+D:\>cd ml-assignment
+
+D:\ml-assignment>pip install -r requirements.txt
+WARNING: Ignoring invalid distribution ~eflex (C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages)
+Requirement already satisfied: numpy>=1.24.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from -r requirements.txt (line 1)) (2.2.6)
+Requirement already satisfied: pandas>=2.0.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from -r requirements.txt (line 2)) (2.3.2)
+Requirement already satisfied: matplotlib>=3.7.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from -r requirements.txt (line 3)) (3.10.5)
+Requirement already satisfied: scikit-learn>=1.3.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from -r requirements.txt (line 4)) (1.7.1)
+Collecting statsmodels>=0.14.0 (from -r requirements.txt (line 5))
+  Downloading statsmodels-0.14.6-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+Requirement already satisfied: scipy>=1.11.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from -r requirements.txt (line 6)) (1.16.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from pandas>=2.0.0->-r requirements.txt (line 2)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from pandas>=2.0.0->-r requirements.txt (line 2)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from pandas>=2.0.0->-r requirements.txt (line 2)) (2025.2)
+Requirement already satisfied: contourpy>=1.0.1 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (4.59.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (1.4.9)
+Requirement already satisfied: packaging>=20.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (25.0)
+Requirement already satisfied: pillow>=8 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (11.3.0)
+Requirement already satisfied: pyparsing>=2.3.1 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from matplotlib>=3.7.0->-r requirements.txt (line 3)) (3.2.3)
+Requirement already satisfied: joblib>=1.2.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from scikit-learn>=1.3.0->-r requirements.txt (line 4)) (1.5.1)
+Requirement already satisfied: threadpoolctl>=3.1.0 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from scikit-learn>=1.3.0->-r requirements.txt (line 4)) (3.6.0)
+Collecting patsy>=0.5.6 (from statsmodels>=0.14.0->-r requirements.txt (line 5))
+  Downloading patsy-1.0.2-py2.py3-none-any.whl.metadata (3.6 kB)
+Requirement already satisfied: six>=1.5 in C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages (from python-dateutil>=2.8.2->pandas>=2.0.0->-r requirements.txt (line 2)) (1.17.0)
+Downloading statsmodels-0.14.6-cp313-cp313-win_amd64.whl (9.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 4.4 MB/s  0:00:02
+Downloading patsy-1.0.2-py2.py3-none-any.whl (233 kB)
+WARNING: Ignoring invalid distribution ~eflex (C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages)
+Installing collected packages: patsy, statsmodels
+WARNING: Ignoring invalid distribution ~eflex (C:\Users\nitan\AppData\Local\Programs\Python\Python313\Lib\site-packages)
+Successfully installed patsy-1.0.2 statsmodels-0.14.6
+
+[notice] A new release of pip is available: 26.0.1 -> 26.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+D:\ml-assignment>cd q1_pca
+
+D:\ml-assignment\q1_pca>python pca_analysis.py
+=== Dataset Overview ===
+(500, 10)
+Annual Income            float64
+Spending Score           float64
+Purchase Frequency       float64
+Avg Basket Size          float64
+Loyalty Years            float64
+Online Purchase Ratio    float64
+Num Categories           float64
+Returns Percentage       float64
+Discount Usage           float64
+Weekend Ratio            float64
+dtype: object
+Annual Income            18
+Spending Score           23
+Purchase Frequency       23
+Avg Basket Size          19
+Loyalty Years            14
+Online Purchase Ratio     9
+Num Categories           12
+Returns Percentage       21
+Discount Usage           27
+Weekend Ratio            15
+dtype: int64
+
+Missing values after imputation: 0
+Feature means after scaling (should be ~0): [ 0.  0.  0. -0. -0. -0. -0. -0. -0.  0.]
+
+Optimal components for 80% variance: 8
+Variance explained by first 3 PCs: 39.58%
+
+=== PCA Component Loadings ===
+                          PC1     PC2
+Annual Income          0.6654  0.0182
+Spending Score         0.0904 -0.0605
+Purchase Frequency     0.5893 -0.0619
+Avg Basket Size        0.3713  0.2979
+Loyalty Years         -0.0610 -0.1853
+Online Purchase Ratio -0.0276  0.5092
+Num Categories         0.2169 -0.4556
+Returns Percentage    -0.0242 -0.3812
+Discount Usage        -0.1075 -0.1736
+Weekend Ratio          0.0150 -0.4763
+
+=== Explained Variance per Component ===
+PC1: 16.37%  |  Cumulative: 16.37%
+PC2: 11.81%  |  Cumulative: 28.18%
+PC3: 11.40%  |  Cumulative: 39.58%
+PC4: 10.60%  |  Cumulative: 50.18%
+PC5: 9.87%  |  Cumulative: 60.04%
+PC6: 9.73%  |  Cumulative: 69.77%
+PC7: 9.08%  |  Cumulative: 78.85%
+PC8: 8.29%  |  Cumulative: 87.14%
+PC9: 8.15%  |  Cumulative: 95.29%
+PC10: 4.71%  |  Cumulative: 100.00%
+
+All Q1 plots saved.
+
+D:\ml-assignment\q1_pca>cd ../q2_timeseries
+
+D:\ml-assignment\q2_timeseries>python timeseries_analysis.py
+=== Dataset Summary ===
+                   Sales
+Date
+2021-01-01   9880.767983
+2021-01-02  10099.339659
+2021-01-03  10309.599041
+2021-01-04  10173.002832
+2021-01-05  10067.726497
+
+Shape: (1095, 1)
+Date range: 2021-01-01 00:00:00 to 2023-12-31 00:00:00
+
+Missing values: 16
+Missing after interpolation: 0
+
+Descriptive Statistics:
+count     1095.00
+mean     11326.70
+std       2091.61
+min       5959.27
+25%       9734.11
+50%      11295.50
+75%      12865.89
+max      17451.10
+Name: Sales, dtype: float64
+
+=== ADF Test: Original Series ===
+Test Statistic : -1.1628
+p-value        : 0.689389
+Critical Values: {'1%': np.float64(-3.4364533503600962), '5%': np.float64(-2.864234857527328), '10%': np.float64(-2.568204837482531)}
+Conclusion: Series is NON-STATIONARY (fail to reject H0)
+
+=== ADF Test: Log-Differenced Series ===
+Test Statistic : -9.9774
+p-value        : 0.000000
+Critical Values: {'1%': np.float64(-3.4364533503600962), '5%': np.float64(-2.864234857527328), '10%': np.float64(-2.568204837482531)}
+Conclusion: Series is STATIONARY (reject H0)
+
+=== Fitting ARIMA(2,1,2) ===
+                               SARIMAX Results
+==============================================================================
+Dep. Variable:              Sales_log   No. Observations:                 1035
+Model:                 ARIMA(2, 1, 2)   Log Likelihood                1225.373
+Date:                Mon, 04 May 2026   AIC                          -2440.746
+Time:                        19:34:37   BIC                          -2416.040
+Sample:                    01-01-2021   HQIC                         -2431.372
+                         - 11-01-2023
+Covariance Type:                  opg
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1         -0.9373      0.045    -20.633      0.000      -1.026      -0.848
+ar.L2         -0.0500      0.040     -1.236      0.216      -0.129       0.029
+ma.L1          0.2914      0.038      7.698      0.000       0.217       0.366
+ma.L2         -0.6051      0.040    -15.025      0.000      -0.684      -0.526
+sigma2         0.0055      0.000     33.679      0.000       0.005       0.006
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):               322.47
+Prob(Q):                              0.99   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.47   Skew:                            -0.13
+Prob(H) (two-sided):                  0.00   Kurtosis:                         5.72
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+
+=== Model Evaluation ===
+MAE  : 2066.04
+RMSE : 2805.04
+MAPE : 14.26%
+
+30-Day Forecast Summary:
+      Date  Forecast Sales  Lower CI  Upper CI
+2024-01-01        11034.81   7295.18  16691.45
+2024-01-02        11034.83   7273.23  16741.88
+2024-01-03        11034.82   7251.48  16792.04
+2024-01-04        11034.83   7229.97  16842.04
+2024-01-05        11034.82   7208.66  16891.80
+2024-01-06        11034.83   7187.57  16941.40
+2024-01-07        11034.82   7166.67  16990.77
+2024-01-08        11034.83   7145.98  17039.98
+2024-01-09        11034.82   7125.48  17088.99
+2024-01-10        11034.82   7105.18  17137.83
+2024-01-11        11034.82   7085.06  17186.48
+2024-01-12        11034.82   7065.13  17234.98
+2024-01-13        11034.82   7045.38  17283.29
+2024-01-14        11034.82   7025.80  17331.45
+2024-01-15        11034.82   7006.40  17379.43
+2024-01-16        11034.82   6987.17  17427.27
+2024-01-17        11034.82   6968.11  17474.94
+2024-01-18        11034.82   6949.21  17522.47
+2024-01-19        11034.82   6930.47  17569.84
+2024-01-20        11034.82   6911.89  17617.07
+2024-01-21        11034.82   6893.47  17664.15
+2024-01-22        11034.82   6875.20  17711.10
+2024-01-23        11034.82   6857.08  17757.90
+2024-01-24        11034.82   6839.10  17804.57
+2024-01-25        11034.82   6821.27  17851.11
+2024-01-26        11034.82   6803.59  17897.51
+2024-01-27        11034.82   6786.04  17943.79
+2024-01-28        11034.82   6768.63  17989.94
+2024-01-29        11034.82   6751.36  18035.97
+2024-01-30        11034.82   6734.22  18081.88
+
+All Q2 plots saved.
+
+D:\ml-assignment\q2_timeseries>
