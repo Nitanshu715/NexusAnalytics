@@ -203,4 +203,4 @@ The full written report (`report/ML_Assignment_Report_Nitanshu_Tak.docx`) covers
 
 ---
 
-*Submitted in partial fulfilment of CO5 — Machine Learning Laboratory, UPES Dehradun.*
+*Submitted in partial fulfilment of CO5 — Statistics and Data Analysis, UPES Dehradun.*
