@@ -1,4 +1,4 @@
-# ML Assignment — CO5
+# Statistics and Data Analysis — CO5
 ### UPES Dehradun | B.Tech CSE | Batch 2 CCVT
 
 | Field | Details |
