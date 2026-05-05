@@ -1,4 +1,4 @@
-# ML Lab Assignment — CO5
+# ML Assignment — CO5
 ### UPES Dehradun | B.Tech CSE | Batch 2 CCVT
 
 | Field | Details |
